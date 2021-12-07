@@ -1,6 +1,17 @@
 const express = require('express');
 const app = express();
 
+require('dotenv').config();
+
+// body parser
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
+// cookie parser
+const cookieParser = require('cookie-parser');
+app.use(cookieParser())
+
 // STATIC FILES
 app.use(express.static('public'))
 
@@ -12,12 +23,10 @@ app.set('layout', 'layouts/main');
 app.use(expressLayouts)
 
 // ROUTES
-app.get('/', (req, res) => {
-    res.render('index.ejs');
-})
+const router = require('./routers');
+app.use(router);
 
 // PORT
-
 const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
