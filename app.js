@@ -1,9 +1,22 @@
 const express = require('express');
 const app = express();
 
+// STATIC FILES
+app.use(express.static('public'))
+
+// VIEWS
+const expressLayouts = require('express-ejs-layouts')
+app.set('view engine', 'ejs')
+app.set('layout', 'layouts/main');
+
+app.use(expressLayouts)
+
+// ROUTES
 app.get('/', (req, res) => {
-    res.send('welcome to my website!');
+    res.render('index');
 })
+
+// PORT
 
 const PORT = process.env.PORT || 8080;
 
