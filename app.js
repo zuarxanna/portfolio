@@ -13,7 +13,7 @@ app.use(expressLayouts)
 
 // ROUTES
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index.ejs');
 })
 
 // PORT
