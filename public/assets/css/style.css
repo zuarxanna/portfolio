@@ -1003,3 +1003,43 @@ section {
 .section-bg {
   background: #f5f8fdc9;
 }
+
+.btn-slider-prev {
+  position: absolute;
+  top: 45%;
+  left: -6%;
+  opacity: 0.6
+}
+
+.btn-slider-prev:hover {
+  opacity: 1
+}
+
+.btn-slider-next {
+  position: absolute;
+  top: 45%;
+  right: -6%;
+  opacity: 0.6
+}
+
+.btn-slider-next:hover {
+  opacity: 1
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen 
+and (max-device-width: 1000px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+} 
