@@ -1026,7 +1026,7 @@ section {
   opacity: 1
 }
 
-.desktop {
+/* .desktop {
   display: block;
 }
 
@@ -1042,4 +1042,4 @@ and (max-device-width: 1000px) {
   .desktop {
     display: none;
   }
-} 
+}  */

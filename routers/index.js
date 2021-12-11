@@ -1,11 +1,17 @@
 const router = require('express').Router();
 // const sendMail = require('../utils/mail')
 const nodemailer = require('nodemailer');
-const smtpTransport = require('nodemailer-smtp-transport')
+const smtpTransport = require('nodemailer-smtp-transport');
+const { certificates, portfolio, testimonials }= require('../data')
 
 // root
 router.get('/', (req, res) => {
-    res.render('index');
+    
+    res.render('index', {
+        certificates,
+        portfolio,
+        testimonials
+    });
 });
 
 // contact
