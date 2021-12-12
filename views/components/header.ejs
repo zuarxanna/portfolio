@@ -5,12 +5,11 @@
       <img src="assets/img/ava/hero.jpg" alt="" class="img-fluid rounded-circle">
       <h1 class="text-light"><a href="index.html">zuarxanna</a></h1>
       <div class="social-links mt-3 text-center">
-        <a href="https://twitter.com/zuarxanna" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
-        <a href="https://www.instagram.com/zuarxanna/" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
-        <a href="https://www.linkedin.com/in/muhammad-ikhsan-03103211b/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/zuarxanna" class="github"><i class="bx bxl-github"></i></a>
+        <% socmed.forEach(socmed => { %>
+          <a href="<%= socmed.link %>" class="<%= socmed.class %> ">
+            <i class="bx <%= socmed.icon %> "></i>
+          </a>
+        <% }) %>
       </div>
     </div>
 
