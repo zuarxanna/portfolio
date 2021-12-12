@@ -13,7 +13,7 @@ const certificates = [
         icon: 'bi-mortarboard-fill',
         title: 'Binar Academy',
         subtitle: 'Full-stack Web Bootcamp',
-        desc: 'Graduated from Binar Academy Full-Stack Web Bootcamp. Passed 11 chapter of challange, and success build an Web Based Application',
+        desc: 'Graduated from Binar Academy Full-Stack Web Bootcamp. Completed 11 learning chapters and succeeded in making a final project.',
         link: '/assets/pdf/binar.pdf',
     }, {
         id: 3,
@@ -21,7 +21,7 @@ const certificates = [
         icon: 'bi-award-fill',
         title: 'Binar Academy',
         subtitle: 'Best Student at Full-stack Web Bootcamp',
-        desc: 'Graduated from Binar Academy Full-stack Web Bootcamp as The Best Student. Become the most active and most developed student.',
+        desc: 'Graduated from Binar Academy Full-stack Web Bootcamp as The Best Student. Became the most active and growing student.',
         link: '/assets/pdf/best.pdf',
     }
 ]

@@ -19,7 +19,7 @@ const portfolio = [
         id: 3,
         img: '/assets/img/works/tw.png',
         title: 'Technical Writer',
-        desc: 'Create product guidelines to help user using the application.',
+        desc: 'Create product guidelines to make it easier for user in using the application',
         modalTarget: '#works3',
         link: '/assets/pdf/tw.pdf',
         slider: ''

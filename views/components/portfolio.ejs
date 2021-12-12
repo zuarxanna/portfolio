@@ -11,7 +11,7 @@
         <div class="row ">
           <% portfolio.forEach(data => { %>
             <div class="col-lg-4 p-3 mb-3">
-              <div class="card shadow mx-auto w-100" style="">
+              <div class="card shadow mx-auto w-100">
                 <img class="card-img-top" src="<%= data.img %> " alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title"><%= data.title %> </h5>
@@ -35,43 +35,6 @@
         </div>
       </div>
     </div>
-    <!-- mobile -->
-    <!-- <div class="container mobile">
-      <div id="carouselExampleControls" class="carousel slide shadow m-3" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <% portfolio.forEach(data => { %>
-              <div class="carousel-item <%= data.slider %>">
-                <div class="card  mx-auto w-100" >
-                  <img class="card-img-top" src="<%= data.img %> " alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title"><%= data.slider %> </h5>
-                  <p class="card-text">
-                    <%= data.desc %> 
-                  </p>
-                  <div class="row">
-                    <div class="col-6">
-                      <button type="button" class="btn bg-second light w-100" data-bs-toggle="modal" data-bs-target="<%= data.modalTarget %> ">
-                        Details
-                      </button>
-                    </div>
-                    <div class="col-6">
-                      <a href="<%= data.link %> " target="_blank" class="btn btn-primary w-100">Live View</a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          <% }) %>
-        </div>
-        <button class="btn-slider-prev btn bg-second" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="btn-slider-next btn bg-second" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        </div>
-      </div>
     </div> -->
 </section>
 

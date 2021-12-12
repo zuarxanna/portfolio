@@ -5,7 +5,7 @@ const testimonials = [
         img: 'assets/img/testimonials/anwar.jpeg',
         profession: 'Full-stack Web Developer',
         from: 'Vektor Intiprima',
-        quote: 'Fast in adapting to the team. Able to complete tasks as requested and on time. Work in a structured manner, making it easier for teams to collaborate. He has a great potential.'
+        quote: 'Fast in adapting to the team. Able to complete tasks as requested and on time. Work in a structured manner, making it easier for teams to collaborate. He has a very great potential, a valuable asset for the future.'
     }, {
         id: 2,
         author: 'Fhazrul Jaelani',
